@@ -55,7 +55,7 @@
                     <a class="nav-link" href="#">다운로드</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">블로그</a>
+                    <a class="nav-link" href="/blog">블로그</a>
                   </li>
                   <!-- <li>
                     <span id="darkmode-toggle" class="nav-link" style="cursor: not-allowed;">어두운 모드 On/Off</span>

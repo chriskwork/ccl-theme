@@ -12,6 +12,12 @@
 
   <?php the_content(); ?>
 
+  <!-- 사이드바 -->
+  <div class="container">
+    <?php dynamic_sidebar('sidebar-1'); ?>
+
+  </div>
+
   <br />
   <hr />
   <br />
