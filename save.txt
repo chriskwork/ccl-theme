@@ -1,0 +1,400 @@
+old style css 
+
+
+/* 
+Theme Name: CCL 2022
+Version: 1.0
+Author: Yohan Kim
+Description: Custom theme for Cafe con Leche 2022
+*/
+
+/* common css */
+
+:root {
+  --text-color: #101010;
+  --text-color-light: rgba(16, 16, 16, 0.5);
+  --bg-color: #fff;
+  --border-color: #dcdcdc;
+  --btn-color: #ffc861;
+  --point-color: #61a6ff;
+  --point-dark-color: #2061b3;
+  --font-korean: 'Noto Sans KR', sans-serif;
+  --font-spanish: 'Lato', sans-serif;
+  --text-s: 14px;
+  --text-xs: 12px;
+  --device-padding-m: 0 1rem;
+  --card-padding: 10px;
+  --section-margin-bot: 5rem;
+  --title-margin-bot: 1.25rem;
+  --border-radius-s: 6px;
+  --border-radius-l: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-korean);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.global--padding {
+  padding: var(--device-padding-m);
+}
+
+section {
+  margin-bottom: var(--section-margin-bot);
+}
+
+.primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: var(--btn-color);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-l);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main-text-light {
+  color: var(--text-color-light);
+}
+
+em {
+  font-size: 0.95rem;
+}
+
+/* ################### Header section ###################  */
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+#logo {
+  width: 60px;
+}
+
+#mobile-menu-bars {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Overlay Menu (for Mobile) */
+
+#mobile-menu-x {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 999;
+  padding: 1rem;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-ul.close {
+  display: none;
+}
+
+@keyframes menu-open {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+.nav-ul.open {
+  display: flex;
+  animation: menu-open 500ms;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6rem;
+  z-index: 998;
+}
+
+.nav-ul li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.menu-active {
+  color: red;
+}
+
+.nav-ul li a {
+  padding: 1.5rem 3rem;
+}
+
+.nav-ul li > ul {
+  display: none;
+}
+
+.nav-ul li > ul.show {
+  display: block;
+}
+
+.nav-ul-drop-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-ul-drop-down img {
+  transform: translateY(6px);
+}
+
+/* ###################  Intro section ################### */
+
+.intro--img {
+  width: 100%;
+  min-height: 300px;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  background-image: url(./assets/images/landing/hero-welcome-mobile.jpg);
+  /* overflow: hidden; */
+  margin-bottom: var(--section-margin-bot);
+}
+
+.intro-img img {
+  width: 100%;
+}
+
+/* ################### Section One - Grammars ################### */
+
+.section--title {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: var(--title-margin-bot);
+}
+
+.section--title > svg {
+  margin-right: 10px;
+}
+
+.grammar--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grammar--card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-l);
+  display: flex;
+  padding: var(--card-padding);
+  min-height: 120px;
+}
+
+.grammar--card > img {
+  width: 120px;
+  border-radius: var(--border-radius-s);
+  margin-right: 8px;
+}
+
+.grammar--card-text p {
+  font-size: var(--text-s);
+  color: var(--text-color-light);
+}
+
+/* ################### Section Two - Tema Words ################### */
+
+.section-two--contents p {
+  margin-bottom: 10px;
+  color: var(--text-color-light);
+}
+
+.section-two--contents-span {
+  font-weight: 700;
+  color: tomato;
+}
+
+.section-two--contents-img {
+  background-image: url(./assets/images/landing/mobile-mockup-1.jpg);
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--border-radius-l);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--title-margin-bot);
+}
+
+.section-two--contents-link {
+  color: #fff;
+  border: 2px solid var(--btn-color);
+  border-radius: var(--border-radius-l);
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ################### BLOG CARDS Section ################### */
+
+.blog-cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-cards-container .blog-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-l);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.blog-cards-container .blog-card .blog-card-post-thumbnail {
+  width: 100%;
+  height: 180px;
+}
+
+.blog-cards-container .blog-card .blog-card-post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-cards-container .blog-card-text {
+  padding: 20px 14px;
+}
+
+.blog-cards-container .blog-card-text .blog-card-text-header {
+  display: flex;
+  align-items: center;
+}
+
+.blog-cards-container .blog-card-text h3 {
+  margin-right: auto;
+  flex: 2;
+}
+
+.blog-card-text .blog-card-text-date {
+  font-size: var(--text-xs);
+  color: rgba(16, 16, 16, 0.2);
+  text-align: right;
+  flex: 1;
+}
+
+.blog-cards-container .blog-card-text p {
+  font-size: var(--text-s);
+  color: var(--text-color-light);
+}
+
+.blog-card-text .blog-card-text-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.85rem;
+}
+
+.blog-card-text .post-category-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.blog-card-text .post-category-container .post-category a {
+  font-size: var(--text-xs);
+  color: #fff;
+  background-color: var(--btn-color);
+  border-radius: var(--border-radius-s);
+  padding: 4px 6px;
+}
+
+.blog-cards-container .blog-card-text .blog-card-text-more {
+  font-size: var(--text-xs);
+  padding: 6px 30px;
+  display: inline-block;
+  border-radius: var(--border-radius-s);
+  color: #fff;
+  background-color: var(--point-dark-color);
+  margin-left: auto;
+}
+
+#blog-section .dots-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#blog-section .dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--border-color);
+  margin: 4px 0;
+  border-radius: 100%;
+}
+
+/* ################### FOOTER ################### */
+
+footer {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-s);
+}
+
+footer .social-media-icons {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .social-media-icons a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+ccl~~local/wp-admin => yohan / 12345

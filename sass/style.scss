@@ -1,0 +1,19 @@
+// custom variables
+$primary: #e4ac43;
+$info: #66cbd7;
+
+// custom theme 오픈하려면 아래꺼 다 코멘트 해제;
+
+// // import the functions & variables
+// @import '../node_modules/bootstrap/scss/_functions';
+// @import '../node_modules/bootstrap/scss/_variables';
+
+// // custom theme colors
+// $custom-theme-colors: (
+//   'altlight': #111;
+// );
+
+// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
