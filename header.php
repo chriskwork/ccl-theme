@@ -28,7 +28,7 @@
       ?>
 
       
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
           <div class="container-fluid">
             <a class="navbar-brand" href="<?php print get_home_url(); ?>"><img id="logo" src="<?php echo $logo[0]; ?>" alt="카페콘레체 로고"></a>
   
@@ -44,15 +44,15 @@
                       스페인어 문법
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">기초문법</a></li>
-                      <li><a class="dropdown-item" href="#">전치사</a></li>
+                      <li><a class="dropdown-item" href="/grammar-basic">기초문법</a></li>
+                      <li><a class="dropdown-item" href="/prepositions">전치사</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">테마별 단어</a>
+                    <a class="nav-link" aria-current="page" href="/vocabulary">테마별 단어</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">다운로드</a>
+                    <a class="nav-link" href="/downloads">다운로드</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/blog">블로그</a>

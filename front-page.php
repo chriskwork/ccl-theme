@@ -21,7 +21,7 @@ CONTENTS HERE
 
   <!-- 문법 섹션 -->
   <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>스페인어 문법</h1>
+    <h2 class="mb-4"><small class="text-muted">#</small>스페인어 문법</h2>
 
     <div class="row">
       <div class="col">
@@ -50,7 +50,7 @@ CONTENTS HERE
 
 <!-- 테마별 단어 섹션 -->
   <section class="container" >
-    <h1 class="mb-4"><small class="text-muted">#</small>테마별 단어</h1>
+    <h2 class="mb-4"><small class="text-muted">#</small>테마별 단어</h2>
 
     <p class="text-muted">현재 <span class="text-danger fw-bold">총 30개 테마, 약 2072개</span> 단어가 테마별로 나뉘어서 정리되어 있습니다.</p>
 
@@ -75,7 +75,7 @@ CONTENTS HERE
       </div>
         
       <div class="col d-flex flex-column justify-content-center">
-        <h1 class="mb-4"><small class="text-muted">#</small>다운로드</h1>
+        <h2 class="mb-4"><small class="text-muted">#</small>다운로드</h2>
   
         <p class="text-muted">문법, 전치사, 테마별 단어 등의 모든 자료를 한 눈에 보고, PDF 파일로 다운로드하실 수 있습니다.</p>
 
@@ -95,7 +95,7 @@ CONTENTS HERE
 <!-- 블로그 최신 글 섹션 -->
 <div class="wrapper">
   <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>블로그 최신 글</h1>
+    <h2 class="mb-4"><small class="text-muted">#</small>블로그 최신 글</h2>
 
     <!-- 블로그 최근 글 3개 불러오기 -->
     <div class="d-flex flex-column gap-3 flex-lg-row ">
@@ -171,7 +171,7 @@ CONTENTS HERE
 <!-- 카페콘레체는.. (About) -->
 <div class="wrapper">
   <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>카페콘레체는..</h1>
+    <h2 class="mb-4"><small class="text-muted">#</small>카페콘레체는..</h2>
 
     <p class="text-muted">
       서른이 넘어 시작한 스페인어는 너무나도 어려웠습니다. 인터넷에 스페인어 공부와 관련된 자료도 은근히 많지 않았기 때문에, '내가 공부한 것들을 정리해서 스페인어를 공부하려는 다른 분들과 공유해야겠다'라는 마음으로 시작하게 되었습니다.<br />
