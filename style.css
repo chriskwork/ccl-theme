@@ -6,7 +6,7 @@ Description: Custom theme for Cafe con Leche 2022
 */
 
 body {
-  padding-top: 120px;
+  padding-top: 90px;
 }
 
 #logo {
@@ -45,8 +45,8 @@ body {
 
 #download-image {
   width: 150%;
-  margin-top: -7rem;
-  margin-left: -5rem;
+  margin-top: -100px;
+  margin-left: -30px;
 }
 
 #blog-post-img {
@@ -101,7 +101,7 @@ body {
   }
 
   #download-image {
-    width: 70%;
+    width: 80%;
     margin-left: 0;
   }
 
@@ -125,6 +125,8 @@ body {
 
 figure.wp-block-image {
   margin: 2rem 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 figure.wp-block-image img {
@@ -152,6 +154,40 @@ nav.navigation.pagination .nav-links .page-numbers {
 nav.navigation.pagination .nav-links .page-numbers.current {
   background-color: #e4ac43;
   color: #fff;
+}
+
+/* ###################### side-bar-navigation */
+#side-bar-nav form.wp-block-search label {
+  display: none;
+}
+
+#side-bar-nav form.wp-block-search {
+  margin-bottom: 1rem;
+}
+
+#side-bar-nav input[type='search'] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #adb5bd;
+}
+
+#side-bar-nav button[type='submit'] {
+  border-radius: 4px;
+  /* border: 1px solid #adb5bd; */
+}
+
+#side-bar-nav .wp-block-group h2 {
+  font-size: 1.2rem;
+}
+
+#side-bar-nav .wp-block-group li {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+}
+
+#side-bar-nav .wp-block-group a {
+  text-decoration: none;
 }
 
 /* ###################### comments */
@@ -206,10 +242,22 @@ nav.navigation.pagination .nav-links .page-numbers.current {
   color: #adb5bd;
 }
 
+#respond .comment-notes {
+  font-size: 0.85rem;
+  color: #adb5bd;
+}
+
 #respond label {
   font-size: 0.8rem;
   display: block;
   color: #adb5bd;
+}
+
+#comments input[type='text'] {
+  width: 100%;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 #respond #comment {
@@ -220,8 +268,13 @@ nav.navigation.pagination .nav-links .page-numbers.current {
   padding: 10px;
 }
 
-#respond #comment:focus {
+#respond #comment:focus,
+#comments input[type='text']:focus {
   outline: 1px solid #66cbd7;
+}
+
+#respond span.required-field-message {
+  display: none;
 }
 
 #respond #submit {

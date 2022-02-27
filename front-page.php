@@ -71,7 +71,7 @@ CONTENTS HERE
   <div class="wrapper">
     <div class="row mb-5">
       <div class="col">
-        <img id="download-image"src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="">
+        <img id="download-image"src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="다운로드 일러스트">
       </div>
         
       <div class="col d-flex flex-column justify-content-center">
@@ -109,7 +109,7 @@ CONTENTS HERE
         while($homepagePosts -> have_posts()){
           $homepagePosts -> the_post(); ?>
 
-          <div class="card w-100">
+          <div class="card w-100 overflow-hidden">
 
             <div id="blog-thumbnail-img" class="card-img-top">
               <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
