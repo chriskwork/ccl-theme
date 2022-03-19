@@ -1,20 +1,21 @@
 // custom variables
 $primary: #393740;
 $secondary: #adb5bd;
-$info: #f2b749;
-
-// custom theme 오픈하려면 아래꺼 다 코멘트 해제;
+$warning: #f2b749;
+$info: #50c88c;
+$success: #4b0082;
 
 // // import the functions & variables
-@import '../node_modules/bootstrap/scss/_functions';
-@import '../node_modules/bootstrap/scss/_variables';
+// @import '../node_modules/bootstrap/scss/_functions';
+// @import '../node_modules/bootstrap/scss/_variables';
 
 // custom theme colors
-$custom-theme-colors: (
-  'indigo': $indigo-500,
-);
+// $custom-theme-colors: (
+//   'cclindigo': #4b0082,
+//   'cclpink': #ff69b4,
+// );
 
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';

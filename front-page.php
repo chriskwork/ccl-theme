@@ -66,7 +66,7 @@ CONTENTS HERE
 </div>
 
 <!-- 다운로드 섹션 -->
-<section id="download" class="container-fluid py-5 mb-5 bg-indigo">
+<section id="download" class="container-fluid py-5 mb-5 bg-info">
 
   <div class="wrapper">
     <div class="row mb-5">
