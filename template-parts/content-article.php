@@ -1,7 +1,7 @@
 <div class="">
 
   <div class="article-header mb-4">
-    <h1><?php the_title(); ?></h1>
+    <h1 class="text-success"><?php the_title(); ?></h1>
     
     <div class="text-muted blog-meta-data">
       <?php the_category(' '); ?>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -10,10 +10,13 @@
     </div>
   </div>
 
-  <?php the_content(); ?>
+  <div class="mt-5">
+    <?php the_content(); ?>
+
+  </div>
 
   <div id="article-tags" class="my-5">
-    <small>태그- <?php the_tags(''); ?></small>
+    <small># <?php the_tags(''); ?></small>
   </div>
 
   <!-- 사이드바 -->

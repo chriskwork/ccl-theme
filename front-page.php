@@ -52,7 +52,7 @@ CONTENTS HERE
   <section class="container" >
     <h2 class="mb-4"><small class="text-muted">#</small>테마별 단어</h2>
 
-    <p class="text-muted">현재 <span class="text-danger fw-bold">총 30개 테마, 약 2072개</span> 단어가 테마별로 나뉘어서 정리되어 있습니다.</p>
+    <p class="text-muted">현재 <span class="text-danger fw-bold">총 34개 테마, 약 2174개</span> 단어가 테마별로 나뉘어서 정리되어 있습니다.</p>
 
     <div id="tema-image" class="mb-3 rounded-3"></div>
 
@@ -66,7 +66,7 @@ CONTENTS HERE
 </div>
 
 <!-- 다운로드 섹션 -->
-<section id="download" class="container-fluid py-5 mb-5 bg-info">
+<section id="download" class="container-fluid py-5 mb-5">
 
   <div class="wrapper">
     <div class="row mb-5">

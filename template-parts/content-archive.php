@@ -4,7 +4,7 @@
 
   <div>
     <a class="text-decoration-none" href="<?php the_permalink(); ?>">
-      <h2><?php the_title(); ?></h2>
+      <h2 class="text-success"><?php the_title(); ?></h2>
     </a>
     
     <div class="text-muted blog-meta-data">
