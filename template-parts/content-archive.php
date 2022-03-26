@@ -1,6 +1,6 @@
 <article class="mb-4 d-md-flex align-items-start">
 
-  <img class="img-fluid rounded-3 me-3 d-none d-md-flex" src="<?php the_post_thumbnail_url('medium'); ?>" alt="블로그 포스트 이미지" />
+  <img class="img-fluid rounded-3 me-5 d-none d-md-flex" src="<?php the_post_thumbnail_url('medium'); ?>" alt="블로그 포스트 이미지" />
 
   <div>
     <a class="text-decoration-none" href="<?php the_permalink(); ?>">
