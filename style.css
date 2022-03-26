@@ -64,7 +64,7 @@ body {
 
 #blog-thumbnail-img img {
   width: 100%;
-  height: auto;
+  min-height: 300px;
   max-height: 280px;
   object-fit: cover;
 }
